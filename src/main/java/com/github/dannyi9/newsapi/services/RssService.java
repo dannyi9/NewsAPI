@@ -34,7 +34,9 @@ public class RssService {
             List<SyndEntry> entries = feed.getEntries();
 
             for (SyndEntry entry : entries) {
-                System.out.println("Title: " + entry.getTitle());
+                String title = entry.getTitle();
+
+                System.out.println("Title: " + title);
             }
 
         } catch (Exception e) {
